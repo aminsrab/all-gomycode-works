@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="java.js"></script>
+  <title>Books Information</title>
+  
+</head>
+
+<body>
+
+  <h1>Books Information</h1>
+
+  <div id="task1">
+    <h2>Task 1 - Array of Book Titles:</h2>
+    <ul id="bookTitlesList"></ul>
+  </div>
+
+  <div id="task2">
+    <h2>Task 2 - Books with More Than 200 Pages:</h2>
+    <ul id="booksWithMoreThan200PagesList"></ul>
+  </div>
+
+  <div id="task3">
+    <h2>Task 3 - Title and Author of Each Book:</h2>
+    <ul id="titleAuthorList"></ul>
+  </div>
+
+  <div id="task4">
+    <h2>Task 4 - Total Number of Pages for All Books:</h2>
+    <p id="totalNumberOfPages"></p>
+  </div>
+
+  <!-- <script>
+    const books = [
+      { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald", pages: 180 },
+      { id: 2, title: "To Kill a Mockingbird", author: "Harper Lee", pages: 281 },
+      { id: 3, title: "1984", author: "George Orwell", pages: 328 },
+      { id: 4, title: "The Catcher in the Rye", author: "J.D. Salinger", pages: 224 },
+      { id: 5, title: "Pride and Prejudice", author: "Jane Austen", pages: 432 }
+    ];
+
+    // Task 1: Use map to create an array of book titles.
+    const bookTitles = books.map(book => book.title);
+    document.getElementById("bookTitlesList").innerHTML = bookTitles.map(title => `<li>${title}</li>`).join('');
+
+    // Task 2: Use filter to get an array of books with more than 200 pages.
+    const booksWithMoreThan200Pages = books.filter(book => book.pages > 200);
+    document.getElementById("booksWithMoreThan200PagesList").innerHTML = booksWithMoreThan200Pages.map(book => `<li>${book.title}</li>`).join('');
+
+    // Task 3: Use forEach to log the title and author of each book.
+    books.forEach(book => {
+      document.getElementById("titleAuthorList").innerHTML += `<li>Title: ${book.title}, Author: ${book.author}</li>`;
+    });
+
+    // Task 4: Use reduce to get the total number of pages for all books.
+    const totalNumberOfPages = books.reduce((totalPages, book) => totalPages + book.pages, 0);
+    document.getElementById("totalNumberOfPages").innerText = `Total Pages: ${totalNumberOfPages}`; -->
+  </script>
+</body>
+
+</html>
